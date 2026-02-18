@@ -69,7 +69,7 @@ const Collection = () => {
   // call applyilter function
   useEffect(() => {
     applyFilter();
-  }, [category, subCategory, search, showSearch]);
+  }, [category, subCategory, search, showSearch, products]);
 
   // Sort products by price
   useEffect(() => {

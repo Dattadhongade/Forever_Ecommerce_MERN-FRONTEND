@@ -8,13 +8,12 @@ const LatestCollection = () => {
   const [latestProduct, setLatestProduct] = useState([]);
   useEffect(() => {
     setLatestProduct(products.slice(0, 10));
-  }, []);
+  }, [products]);
   return (
     <div className="my-3">
       <div className=" text-center py-8 text-3xl">
         <Title text1={"LATEST"} text2={"COLLECTION"} />
         <p className="w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600 ">
-          {" "}
           Lorem ipsum dolor, sit amet consectetur adipisicing elit.{" "}
         </p>
       </div>
